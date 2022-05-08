@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const express =require("express")
 const app =express()
 process.setMaxListeners(Infinity)
+require('./cron.js')
 
 const port = process.env.PORT || 3000;
 
